@@ -10,7 +10,7 @@ import com.lu2code.springboot.cruddemo.dao.EmployeeDAO;
 import com.lu2code.springboot.cruddemo.entity.Employee;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeDAO {
+public class EmployeeServiceImpl implements EmployeeService {
 
 	private EmployeeDAO employeeDAO;
 
@@ -22,7 +22,6 @@ public class EmployeeServiceImpl implements EmployeeDAO {
 	@Override
 	@Transactional
 	public List<Employee> findAll() {
-		// TODO Auto-generdated method stub
 		return employeeDAO.findAll();
 	}
 
