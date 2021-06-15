@@ -1,10 +1,10 @@
-package com.lu2code.springboot.cruddemo.dao;
+package com.lu2code.springboot.cruddemo.service;
 
 import java.util.List;
 
 import com.lu2code.springboot.cruddemo.entity.Employee;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
 
 	public List<Employee> findAll();
 
